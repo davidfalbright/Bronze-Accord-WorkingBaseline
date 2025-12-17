@@ -1,0 +1,67 @@
+schema_version: 1.1
+packaging_mode: STANDARD
+
+pack:
+  name: "LUMEN Standard Pack"
+  pack_version: "2025.12.17"
+  description: >
+    Prepackaged runtime bundles for most customers. Loads 3 bundles:
+    pre_lite, pre_deep, post. This version consolidates interface coordination
+    into COORD.COUNTERPARTY and upgrades the shared contract to v1.1 with
+    multi-stream inputs and generalized counterparty identity.
+
+compatibility:
+  contract_schema: "clean_data_contract_v1_1.yaml"
+  min_orchestrator_version: "0.4.0"
+
+runtime_bundles:
+  pre_lite:
+    file: "bundle_pre_lite.yaml"
+    sha256: "<fill>"
+    included_modules:
+      - id: "GOV.EPI.ROOT"
+      - id: "RB.INPUT.ASSESSOR_LITE"
+      - id: "COORD.COUNTERPARTY"
+  pre_deep:
+    file: "bundle_pre_deep.yaml"
+    sha256: "<fill>"
+    included_modules:
+      - id: "GOV.EPI.ROOT"
+      - id: "RB.INPUT.ASSESSOR_DEEP"
+      - id: "RB.PROXY.VALIDATION"
+      - id: "COORD.COUNTERPARTY"
+  post:
+    file: "bundle_post.yaml"
+    sha256: "<fill>"
+    included_modules:
+      - id: "GOV.EPI.POST_LINT"
+      - id: "RB.OUTPUT.AUDITOR"
+
+enforcement:
+  required_bundles: ["pre_lite", "post"]
+  conditional_bundles:
+    pre_deep:
+      trigger_field: "context_tags.escalate_to_pre_deep"
+      trigger_values: [true]
+  cannot_disable:
+    - "GOV.EPI.ROOT"
+    - "GOV.EPI.POST_LINT"
+    - "COORD.COUNTERPARTY"
+
+defaults:
+  epistemic:
+    default_mode_for_external_info: "PROVISIONAL"
+  interface_coordination:
+    default_profile_if_unknown: "UNKNOWN"
+    require_conflict_logging: true
+    multi_stream_enabled: true
+
+provenance:
+  source_repo: "<fill>"
+  source_commit: "<fill>"
+  build_id: "<fill>"
+  built_at_utc: "2025-12-17T08:00:00Z"
+
+deprecated_modules:
+  - "COORD.USER"
+  - "COORD.FRONTIER"

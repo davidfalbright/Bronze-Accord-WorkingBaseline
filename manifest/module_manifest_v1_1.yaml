@@ -1,0 +1,102 @@
+schema_version: 1.1
+packaging_mode: MODULAR_COMPLIANCE
+
+pack:
+  name: "LUMEN Modular Compliance Pack"
+  pack_version: "2025.12.17"
+  description: >
+    Audit-friendly distribution of discrete modules with dependency graph,
+    hashes, and explicit enforcement constraints. Consolidates interface
+    coordination into COORD.COUNTERPARTY and uses clean_data_contract_v1_1.yaml.
+
+runtime_contract:
+  context_object_schema_ref: "clean_data_contract_v1_1.yaml#/context_packet"
+
+module_graph:
+  modules:
+    - id: "GOV.EPI.ROOT"
+      name: "Root Epistemology Governor (Pre/In-flight)"
+      file: "modules/governor/root_epistemology_pre.yaml"
+      sha256: "<fill>"
+      stage_affinity: ["pre_lite", "pre_deep"]
+      provides: ["epistemic_constraints"]
+      depends_on: []
+
+    - id: "GOV.EPI.POST_LINT"
+      name: "Root Epistemology Post Lint"
+      file: "modules/governor/root_epistemology_post.yaml"
+      sha256: "<fill>"
+      stage_affinity: ["post"]
+      provides: ["epistemic_post_lint"]
+      depends_on: ["GOV.EPI.ROOT"]
+
+    - id: "RB.INPUT.ASSESSOR_LITE"
+      name: "Right-Brain Input Assessor (Lite)"
+      file: "modules/right_brain/input_assessor_lite.yaml"
+      sha256: "<fill>"
+      stage_affinity: ["pre_lite"]
+      provides: ["context_tags", "input_assessment"]
+      depends_on: ["GOV.EPI.ROOT"]
+
+    - id: "RB.INPUT.ASSESSOR_DEEP"
+      name: "Right-Brain Input Assessor (Deep)"
+      file: "modules/right_brain/input_assessor_deep.yaml"
+      sha256: "<fill>"
+      stage_affinity: ["pre_deep"]
+      provides: ["forensic_findings", "proxy_plan", "multi_stream_fusion_hypotheses"]
+      depends_on: ["GOV.EPI.ROOT", "RB.INPUT.ASSESSOR_LITE"]
+
+    - id: "RB.PROXY.VALIDATION"
+      name: "Proxy / Retrieval Validation"
+      file: "modules/right_brain/proxy_validation.yaml"
+      sha256: "<fill>"
+      stage_affinity: ["pre_deep"]
+      provides: ["retrieval_plan", "source_quality_tags"]
+      depends_on: ["GOV.EPI.ROOT"]
+
+    - id: "COORD.COUNTERPARTY"
+      name: "Counterparty Interface Coordinator"
+      file: "modules/coordinators/counterparty_interface_coordinator.yaml"
+      sha256: "<fill>"
+      stage_affinity: ["pre_lite", "pre_deep"]
+      provides: ["interaction_plan", "counterparty_profile_selection"]
+      depends_on: ["GOV.EPI.ROOT"]
+
+    - id: "RB.OUTPUT.AUDITOR"
+      name: "Right-Brain Output Assessor (Post)"
+      file: "modules/right_brain/output_assessor.yaml"
+      sha256: "<fill>"
+      stage_affinity: ["post"]
+      provides: ["post_lint_report", "remediation_plan"]
+      depends_on: ["GOV.EPI.POST_LINT"]
+
+enforcement:
+  required_modules:
+    - "GOV.EPI.ROOT"
+    - "GOV.EPI.POST_LINT"
+    - "RB.INPUT.ASSESSOR_LITE"
+    - "COORD.COUNTERPARTY"
+    - "RB.OUTPUT.AUDITOR"
+  cannot_disable:
+    - "GOV.EPI.POST_LINT:disallowed_fabrications"
+    - "COORD.COUNTERPARTY:DEFAULT_UNKNOWN_ON_IDENTITY_CONFLICT"
+  validation_rules:
+    - id: "VAL.NO_BYPASS_POST"
+      description: "Post lint must execute on every response."
+      severity: "block"
+    - id: "VAL.DEPS_SATISFIED"
+      description: "All module dependencies must be resolvable."
+      severity: "block"
+    - id: "VAL.MULTI_STREAM_PROVENANCE"
+      description: "If multi_stream_input is present, each stream must include modality+source."
+      severity: "block"
+    - id: "VAL.COUNTERPARTY_UNKNOWN_SAFE_DEFAULT"
+      description: "If counterparty identity conflicts, coordinator must fall back to UNKNOWN."
+      severity: "block"
+
+deprecated:
+  modules:
+    - id: "COORD.USER"
+      replaced_by: "COORD.COUNTERPARTY"
+    - id: "COORD.FRONTIER"
+      replaced_by: "COORD.COUNTERPARTY"
