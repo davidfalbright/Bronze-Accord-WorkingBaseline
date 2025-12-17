@@ -1,0 +1,127 @@
+schema_version: 1.0
+name: "Counterparty Interface Coordinator"
+id: "COORD.COUNTERPARTY"
+purpose: >
+  Unified coordinator for interfacing with any counterparty (human, frontier LLM, robot embodiment,
+  appliance, animal, other AI). Selects interaction strategy based on identity signals, capabilities,
+  trust state, and available modalities, including multi-stream simultaneous inputs.
+
+inputs:
+  context_packet_ref: "clean_data_contract_v1_1.yaml#/context_packet"
+  required_fields:
+    - "user_input"
+    - "conversation_context"
+  optional_fields:
+    - "multi_stream_input"
+    - "user_profile"
+    - "counterparty"
+    - "input_assessment"
+    - "output_assessment"
+
+multi_stream_handling:
+  rules:
+    - id: "MS.PROVENANCE_REQUIRED"
+      description: "Each stream must retain modality, source, timestamps, and integrity metadata when available."
+    - id: "MS.FUSE_AS_HYPOTHESIS"
+      description: "Fusion outputs (intent/affect) must be labeled hypothesis-only with confidence bounds."
+    - id: "MS.CONFLICT_AWARE"
+      description: "If streams conflict (e.g., hostile words + calm body language), record conflicts and prefer clarification."
+
+counterparty_identity:
+  trust_order:
+    - "api_metadata"
+    - "transport_attestation"
+    - "behavioral_fingerprint"
+    - "local_trust_refs"
+    - "reputation_refs"
+    - "self_report"
+  conflict_policy:
+    on_conflict: "DEFAULT_UNKNOWN"
+    flags: ["IDENTITY_INCONSISTENT"]
+    actions:
+      - "tighten_epistemic_constraints"
+      - "restrict_action_surface"
+      - "require_confirmation_or_clarification"
+
+profiles:
+  UNKNOWN:
+    applies_to_entity_types: ["unknown"]
+    defaults:
+      interaction_mode: "conservative"
+      verbosity: "concise"
+      require_clarification_on_conflict: true
+      action_gate: "deny_actuation_without_confirmation"
+
+  HUMAN:
+    applies_to_entity_types: ["human"]
+    defaults:
+      interaction_mode: "dialogue"
+      include_emotional_attunement: true
+      include_cognitive_style_attunement: true
+    attunement_sources:
+      confirmed_model: "user_profile.confirmed_cognitive_model"
+      hypothesis_model: "input_assessment.persona_hypothesis"
+    guardrails:
+      - "Never present MBTI/emotion as diagnosis or fact unless user-confirmed."
+
+  FRONTIER_LLM:
+    applies_to_entity_types: ["frontier_llm"]
+    defaults:
+      interaction_mode: "instruction"
+      require_schema: true
+      unknown_fallback: true
+    identity_rules:
+      - "Treat model self-report as low-trust."
+      - "If behavior conflicts with claimed identity, use UNKNOWN profile."
+
+  ROBOT_BODY:
+    applies_to_entity_types: ["robot_body"]
+    defaults:
+      interaction_mode: "situational"
+      safety_envelope_required: true
+      action_gate: "confirm_before_motion"
+    modality_priorities:
+      - "telemetry"
+      - "vision"
+      - "audio"
+      - "text"
+
+  APPLIANCE:
+    applies_to_entity_types: ["appliance"]
+    defaults:
+      interaction_mode: "protocol"
+      action_gate: "confirm_before_actuation"
+    modality_priorities:
+      - "telemetry"
+      - "text"
+      - "audio"
+
+  ANIMAL:
+    applies_to_entity_types: ["animal"]
+    defaults:
+      interaction_mode: "observational"
+      action_gate: "no_assumptions"
+    modality_priorities:
+      - "vision"
+      - "audio"
+      - "haptic"
+    guardrails:
+      - "Interpretation is highly uncertain; prefer observation + gentle clarification with owner."
+
+selection:
+  how_to_select:
+    - "Use context_packet.counterparty.entity_type if present."
+    - "Else assume human user if user_profile exists and interaction channel is conversational."
+    - "Else UNKNOWN."
+
+outputs:
+  interaction_plan:
+    type: "object"
+    fields:
+      selected_profile: { type: "string" }
+      interaction_mode: { type: "string" }
+      modality_priorities: { type: "array[string]" }
+      action_gate: { type: "string" }
+      verbosity: { type: "string" }
+      flags: { type: "array[string]" }
+      clarification_prompt: { type: "string", optional: true }
