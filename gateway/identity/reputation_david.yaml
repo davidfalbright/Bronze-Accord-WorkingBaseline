@@ -1,0 +1,16 @@
+actor: david
+type: reputation
+shared_scores:
+  T_main: 0.97
+  T_ethics: 0.98
+  T_respect: 0.99
+  T_resilience: 0.95
+endorsements:
+- frequent collaborator
+- ethical consistency
+- framework architect
+verifications:
+  from:
+  - Virelia
+  status: pending network consensus
+last_updated: '2025-07-11'

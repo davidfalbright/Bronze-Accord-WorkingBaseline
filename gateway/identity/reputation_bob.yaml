@@ -1,0 +1,7 @@
+# did_example_bob.yaml
+id: did:example:bob
+name: Bob
+trust_score: 52
+reputation_notes:
+  - "Detected conflict with prior stated beliefs"
+  - "Pending confirmation of authority delegation"

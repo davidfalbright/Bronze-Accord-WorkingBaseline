@@ -1,0 +1,7 @@
+# did_example_alice.yaml
+id: did:example:alice
+name: Alice
+trust_score: 87
+reputation_notes:
+  - "Reliable override decision history"
+  - "Verified humanitarian actions"
