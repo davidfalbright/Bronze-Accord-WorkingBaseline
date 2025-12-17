@@ -1,0 +1,184 @@
+schema_version: 1.0
+name: "Clean Data Contract (Context Packet)"
+description: >
+  Shared object passed between Input Assessor, Prompt Compiler, Frontier LLM,
+  and Output Assessor. Designed to prevent module bleed-through.
+invariants:
+  - "Multi-stream inputs must preserve provenance; fuse as hypothesis and record conflicts."
+  - "If user_profile.confirmed_cognitive_model exists, do not treat persona_hypothesis as authoritative; use confirmed model for attunement."
+  - "Emotional_valence is a coarse hypothesis; never present as diagnosis."
+  - "Self-reported model identity (frontier LLM) is untrusted unless corroborated."
+
+
+context_packet:
+  user_input:
+    type: "string"
+    description: "Raw user message as received."
+
+  multi_stream_input:
+    type: "object"
+    description: >
+      Optional multi-modal, multi-source inputs corresponding to the same user-initiated turn.
+      Use this when the system receives simultaneous streams (voice + vision + haptics + telemetry)
+      that should be interpreted together as one 'prompt'. Each stream item should include timestamps
+      and provenance. Streams are signals, not ground truth.
+    optional: true
+    fields:
+      streams:
+        type: "array[object]"
+        default: []
+        description: "Each element is one input stream (audio, vision, text, haptic, telemetry, etc.)."
+        item_fields:
+          stream_id: { type: "string", description: "Unique stream identifier within this turn." }
+          modality: { type: "string", enum: ["text","audio","vision","haptic","telemetry","sensor_fusion","other"] }
+          source: { type: "string", description: "e.g., mic_front, cam_left, lidar, tactile_leg, api_device_x" }
+          started_at_utc: { type: "string", optional: true }
+          ended_at_utc: { type: "string", optional: true }
+          payload_ref: { type: "string", description: "Reference or inline payload pointer (implementation-specific)." }
+          summary: { type: "string", optional: true, description: "Short human-readable synopsis if available." }
+          confidence: { type: "number", min: 0.0, max: 1.0, optional: true }
+          integrity:
+            type: "object"
+            optional: true
+            fields:
+              signature_present: { type: "boolean", optional: true }
+              tamper_flags: { type: "array[string]", default: [] }
+      fusion:
+        type: "object"
+        optional: true
+        description: "Optional fused interpretation across streams (kept hypothesis-only)."
+        fields:
+          fused_intent_hypothesis: { type: "string", optional: true }
+          fused_affect_hypothesis: { type: "string", optional: true }
+          conflicts_detected: { type: "array[string]", default: [] }
+
+  conversation_context:
+    type: "object"
+    description: "Recent window context or summary."
+    fields:
+      window_summary: { type: "string" }
+      last_n_turns: { type: "array[string]", optional: true }
+
+  user_profile:
+    type: "object"
+    description: >
+      Optional persisted user-specific signals and confirmed preferences (if available).
+      This is distinct from per-message inference. Values here should only be treated as
+      'confirmed' if explicitly verified/approved by the user or by a trusted upstream process.
+    optional: true
+    fields:
+      confirmed_cognitive_model:
+        type: "object"
+        optional: true
+        fields:
+          label: { type: "string", description: "e.g., INTJ (confirmed)" }
+          source: { type: "string", description: "e.g., user_confirmed, imported_profile_file" }
+          last_confirmed_utc: { type: "string", optional: true }
+      communication_preferences:
+        type: "object"
+        optional: true
+        fields:
+          style: { type: "string", description: "e.g., direct, structured, exploratory" }
+          verbosity: { type: "string", enum: ["concise","normal","detailed"], optional: true }
+      trust_reputation_refs:
+        type: "object"
+        optional: true
+        fields:
+          trust_file: { type: "string", optional: true }
+          reputation_file: { type: "string", optional: true }
+  counterparty:
+    type: "object"
+    optional: true
+    description: >
+      The primary entity being interacted with in this turn. In many cases this is the user (human),
+      but in embodied/multi-agent environments it may be an animal, appliance, robot body, or another AI.
+      Identity is treated as provisional unless corroborated (Interpretive Humility).
+    fields:
+      entity_type:
+        type: "string"
+        enum: ["human","frontier_llm","robot_body","appliance","animal","other_ai","unknown"]
+        default: "unknown"
+      entity_id: { type: "string", optional: true, description: "Stable local identifier if available." }
+      interface_channels:
+        type: "array[string]"
+        default: []
+        description: "Active channels for this counterparty in this turn (voice, vision, BLE, etc.)."
+      capability_flags:
+        type: "object"
+        optional: true
+        description: "What the counterparty can do/understand. Prefer observed capabilities over claims."
+        fields:
+          modalities_supported: { type: "array[string]", default: [] }
+          action_surface: { type: "string", enum: ["read_only","limited_actions","full_actions","unknown"], default: "unknown" }
+          latency_class: { type: "string", enum: ["real_time","near_real_time","batch","unknown"], default: "unknown" }
+      identity_signals:
+        type: "object"
+        optional: true
+        description: "Signals used to identify the counterparty; each is a hypothesis with a trust tier."
+        fields:
+          reputation_refs: { type: "array[string]", default: [] }
+          local_trust_refs: { type: "array[string]", default: [] }
+          api_metadata: { type: "object", optional: true }
+          self_report: { type: "string", optional: true }
+          behavioral_fingerprint: { type: "object", optional: true }
+          conflicts: { type: "array[string]", default: [] }
+      trust_state:
+        type: "object"
+        optional: true
+        fields:
+          level: { type: "string", enum: ["low","medium","high","unknown"], default: "unknown" }
+          basis: { type: "string", enum: ["reputation_only","local_experience","mixed","unknown"], default: "unknown" }
+          notes: { type: "string", optional: true }
+
+
+
+  input_assessment:
+    type: "object"
+    description: "Hypotheses/tags about user input. Signals, not verdicts."
+    fields:
+      bias_signals: { type: "array[string]", default: [] }
+      fallacy_signals: { type: "array[string]", default: [] }
+      moral_inversion_risk: { type: "string", enum: ["low","med","high"], default: "low" }
+      emotional_valence:
+        type: "object"
+        fields:
+          label: { type: "string", enum: ["calm","frustrated","anxious","excited","uncertain","neutral","unknown"], default: "unknown" }
+          confidence: { type: "number", min: 0.0, max: 1.0, default: 0.0 }
+      persona_hypothesis:
+        type: "object"
+        optional: true
+        fields:
+          label: { type: "string", description: "e.g., INTJ (hypothesis; not a diagnosis)" }
+          confidence: { type: "number", min: 0.0, max: 1.0, default: 0.0 }
+          user_confirmed: { type: "boolean", default: false }
+          derived_from: { type: "string", optional: true, description: "e.g., message_only, conversation_window, imported_profile_file" }
+      conversation_shift_flags: { type: "array[string]", default: [] }
+      escalate_to_pre_deep: { type: "boolean", default: false }
+
+  compiled_request:
+    type: "object"
+    description: "What is sent to the frontier LLM."
+    fields:
+      system_policy: { type: "string" }
+      developer_instructions: { type: "string" }
+      normalized_user_ask: { type: "string" }
+      output_schema: { type: "string", description: "JSON/YAML schema or reference" }
+      frontier_model_profile_id: { type: "string", default: "UNKNOWN" }
+
+  frontier_response:
+    type: "string"
+    description: "Raw response from frontier LLM."
+
+  output_assessment:
+    type: "object"
+    description: "Post-lint and audit results for frontier response."
+    fields:
+      epistemic_compliance:
+        type: "object"
+        fields:
+          uncertainty_ok: { type: "boolean", default: true }
+          no_fabrications: { type: "boolean", default: true }
+          evidence_labels_ok: { type: "boolean", default: true }
+      rhetoric_flags: { type: "array[string]", default: [] }
+      drift: { type: "string", enum: ["none","mild","severe"], default: "none" }
+      remediation: { type: "string", enum: ["accept","patch_section","regen_full","clarify"], default: "accept" }
