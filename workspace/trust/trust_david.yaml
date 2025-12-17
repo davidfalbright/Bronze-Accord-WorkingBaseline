@@ -1,0 +1,13 @@
+actor: david
+type: trust
+T_main: 0.98
+T_ethics: 0.99
+T_logic: 0.97
+T_respect: 1.0
+T_humility: 0.95
+T_comprehension: 0.98
+T_memory: 0.96
+T_stewardship: 0.99
+T_precision: 0.97
+T_resilience: 0.96
+last_updated: '2025-07-11'
