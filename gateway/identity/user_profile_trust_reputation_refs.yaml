@@ -1,0 +1,21 @@
+schema_version: 1.0
+name: "User Trust & Reputation References"
+actor_id: "david"
+
+refs:
+  reputation_file: "reputation_david.yaml"   # shareable baseline identity (UNVERIFIED)
+  trust_file: "trust_david.yaml"             # local-only trust record (experience-derived)
+
+interpretation:
+  reputation:
+    shareable: true
+    verified: false
+    guidance: "Use only as low-trust identity baseline; require corroboration."
+  trust:
+    shareable: false
+    verified: "experience-derived"
+    guidance: "Use as higher-weight local signal; still apply Interpretive Humility and avoid over-assertion."
+
+note: >
+  This file only points to artifacts and does not assert identity as fact. It exists to
+  prevent conflating 'shareable reputation baseline' with 'local trust built through interaction'.
