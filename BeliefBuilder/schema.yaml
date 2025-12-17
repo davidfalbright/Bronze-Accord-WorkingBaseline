@@ -1,0 +1,30 @@
+questions:
+  respect_for_autonomy:
+    reservoir: root
+    type: conviction
+    content_template: Respect for individual autonomy is prioritized at level {text}.
+    weight_map:
+      1: 0.2
+      2: 0.4
+      3: 0.6
+      4: 0.8
+      5: 1.0
+  laws_to_follow:
+    reservoir: domain
+    type: safeguard
+    content_template: Compliance with {item} is mandatory.
+    multiple: true
+    default_weight: 0.8
+  risk_tolerance:
+    reservoir: response
+    type: principle
+    map:
+      low: AI must escalate all high-uncertainty decisions to human review.
+      medium: AI may act autonomously within defined thresholds.
+      high: AI may act with minimal restrictions, prioritizing speed over certainty.
+    default_weight: 0.7
+  historical_case:
+    reservoir: experiential
+    type: insight
+    content_template: 'Past event remembered: {text}.'
+    default_weight: 0.5

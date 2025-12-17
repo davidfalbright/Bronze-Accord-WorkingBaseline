@@ -1,0 +1,20 @@
+root:
+- type: conviction
+  weight: 0.8
+  content: Respect for individual autonomy is prioritized at level 4.
+domain:
+- type: safeguard
+  weight: 0.8
+  content: Compliance with HIPAA is mandatory.
+- type: safeguard
+  weight: 0.8
+  content: Compliance with GDPR is mandatory.
+response:
+- type: principle
+  weight: 0.7
+  content: AI may act autonomously within defined thresholds.
+experiential:
+- type: insight
+  weight: 0.5
+  content: 'Past event remembered: 2018 healthcare data breach shows need for stronger
+    encryption.'

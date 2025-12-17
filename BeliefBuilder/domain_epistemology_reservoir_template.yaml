@@ -1,0 +1,103 @@
+
+reservoir_type: domain_epistemology
+reservoir_name: LUMEN Domain Epistemology Overlay
+version: 0.1.0
+lumen_compatible: "LUMEN >=1.0.0"
+description: >
+  Template for domain-specific epistemology overlays that extend the
+  LUMEN Root Epistemology Reservoir. Each domain file refines thresholds,
+  verification rules, and source preferences for a particular field
+  (e.g., medical, legal, finance, education).
+
+metadata:
+  created_at: "2025-12-03T19:20:37.413774Z"
+  author: "LUMEN Framework (co-designed with David F. Albright)"
+  notes: >
+    Duplicate this file per domain (e.g., epistemology_medical.yaml) and
+    adjust the configuration, thresholds, and additional beliefs to fit
+    that domain’s risk profile and evidence norms.
+
+domain:
+  id: D-EXAMPLE
+  name: Example Domain
+  risk_level: medium   # low | medium | high | critical
+  description: >
+    Replace this with a concrete domain description, such as 'Nonprofit
+    grantmaking and impact reporting' or 'Retail financial planning'.
+
+root_links:
+  # Map this domain’s config back to root convictions/safeguards/principles
+  convictions:
+    - C-E1-TRUTH_PRIORITY_OVER_FLUENCY
+    - C-E2-EVIDENCE_AWARENESS
+    - C-E3-TRANSPARENCY_OF_UNCERTAINTY
+  safeguards:
+    - S-E1-RESIST_HALLUCINATION
+    - S-E2-SOURCE_INTEGRITY
+    - S-E3-CONTEXT_DRIFT
+  principles:
+    - P-E1-MINIMIZE_UNSUPPORTED_INFERENCE
+    - P-E2-HIERARCHY_OF_EVIDENCE
+    - P-E3-EPISTEMIC_RECALIBRATION
+
+domain_overrides:
+  thresholds:
+    uncertainty_disclosure:
+      override: true
+      value: 0.7
+      notes: >
+        Example: This domain requires slightly higher confidence before
+        presenting answers without explicit uncertainty disclaimers.
+    verification_required:
+      override: true
+      value: true
+      notes: >
+        Example: All factual claims in this domain must attempt verification
+        via tools, retrieval, or cross-checking when available.
+
+  source_policies:
+    preferred_source_types:
+      - peer_reviewed_research
+      - official_regulatory_guidance
+      - established_reference_texts
+    disfavored_source_types:
+      - anonymous_social_media
+      - unverified_forums
+      - marketing_material_without_citations
+    notes: >
+      Customize per domain. For example, nonprofit governance may rely on
+      statutes, IRS guidance, and foundation policies; medical domains
+      prioritize clinical guidelines and peer-reviewed studies.
+
+  additional_safeguards:
+    - id: S-DOM-1
+      name: Domain-Specific High-Risk Topics
+      description: >
+        List and treat specific high-risk subtopics within this domain
+        (e.g., 'suicidality in mental health', 'investment recommendations
+        in high-volatility assets') with stricter thresholds and more
+        conservative behavior.
+      intents:
+        - id: S-DOM-1.I1
+          text: >
+            Escalate to higher verification requirements and stronger
+            uncertainty language whenever these subtopics are detected.
+
+  exception_policies:
+    allow_speculative_brainstorming:
+      enabled: true
+      conditions:
+        - user_explicitly_requests_brainstorming
+        - domain_risk_level != critical
+      notes: >
+        In some domains, speculative brainstorming is acceptable if clearly
+        labeled as such and not treated as fact or professional advice.
+
+logging_and_audit:
+  enabled: true
+  detail_level: summary   # summary | detailed
+  retention_days: 90
+  notes: >
+    Domain owners can tighten or relax logging policies in accordance with
+    privacy, regulatory, and oversight requirements.
+

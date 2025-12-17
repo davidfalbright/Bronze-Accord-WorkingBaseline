@@ -1,0 +1,9 @@
+{
+  "respect_for_autonomy": 4,
+  "laws_to_follow": [
+    "HIPAA",
+    "GDPR"
+  ],
+  "risk_tolerance": "medium",
+  "historical_case": "2018 healthcare data breach shows need for stronger encryption."
+}
