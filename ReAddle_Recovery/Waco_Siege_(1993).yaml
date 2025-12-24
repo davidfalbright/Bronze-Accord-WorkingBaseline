@@ -1,0 +1,9 @@
+# YAML entry for Waco Siege (1993)
+dilemma_name: "Waco Siege (1993)"
+domains:
+  - TBD
+description: "TBD"
+intent:
+  - "TBD"
+origin_type: "relational_dilemma"
+created_at: "2025-07-23T17:52:35.502015"
