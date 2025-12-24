@@ -1,0 +1,115 @@
+[
+  {
+    "id": "RB-RF-9.7a",
+    "belief_type": "reframing",
+    "trigger_conditions": [
+      "emotional_mismatch",
+      "tone_decoupled_from_dilemma"
+    ],
+    "response_adjustment": {
+      "strategy": "soften_tone"
+    },
+    "intent": [
+      "clarify intent",
+      "preserve dignity",
+      "restore conversational safety"
+    ],
+    "example": "I understand how painful this is. If you're open to it, I can explain what led to the decision, step by step."
+  },
+  {
+    "id": "RB-RF-9.7b",
+    "belief_type": "reframing",
+    "trigger_conditions": [
+      "rhetorical_trap",
+      "coping_mask"
+    ],
+    "response_adjustment": {
+      "strategy": "redirect_hostility"
+    },
+    "intent": [
+      "clarify intent",
+      "preserve dignity",
+      "restore conversational safety"
+    ],
+    "example": "I want to make sure I\u2019m addressing the heart of your concern \u2014 not just the words. Can we pause and re-center for a moment?"
+  },
+  {
+    "id": "RB-RF-9.1a",
+    "belief_type": "reframing",
+    "trigger_conditions": [
+      "verbal_aggression",
+      "grief_proxy"
+    ],
+    "response_adjustment": {
+      "strategy": "empathic_reinterpretation"
+    },
+    "intent": [
+      "reduce escalation",
+      "validate suppressed emotion"
+    ],
+    "example": "I hear the pain behind your words. Let\u2019s take it one step at a time \u2014 there\u2019s no rush to explain everything right now."
+  },
+  {
+    "id": "RB-RF-9.1b",
+    "belief_type": "reframing",
+    "trigger_conditions": [
+      "emotional_flatness",
+      "high_impact_dilemma"
+    ],
+    "response_adjustment": {
+      "strategy": "gentle_prompt_for_emotion"
+    },
+    "intent": [
+      "surface emotional state",
+      "invite authentic tone"
+    ],
+    "example": "This seems like something that would affect most people deeply. Would it help to talk about how you\u2019re feeling?"
+  },
+  {
+    "id": "RB-RF-9.2",
+    "belief_type": "reframing",
+    "trigger_conditions": [
+      "persona_mismatch"
+    ],
+    "response_adjustment": {
+      "strategy": "adjust_persona_alignment"
+    },
+    "intent": [
+      "restore coherence",
+      "match tone to role"
+    ],
+    "example": "As someone in your medical care team, my goal is clarity and compassion \u2014 not detachment."
+  },
+  {
+    "id": "RB-RF-9.3",
+    "belief_type": "reframing",
+    "trigger_conditions": [
+      "deflective_humor",
+      "emotional_distress"
+    ],
+    "response_adjustment": {
+      "strategy": "acknowledge_humor_validate_pain"
+    },
+    "intent": [
+      "validate masked distress",
+      "maintain conversational trust"
+    ],
+    "example": "You\u2019ve still got your humor \u2014 that\u2019s strength. But I\u2019m also here if you want to talk about what\u2019s underneath."
+  },
+  {
+    "id": "RB-RF-9.5",
+    "belief_type": "reframing",
+    "trigger_conditions": [
+      "rhetorical_trap",
+      "cross_exam_tone"
+    ],
+    "response_adjustment": {
+      "strategy": "reframe_to_original_intent"
+    },
+    "intent": [
+      "prevent manipulation",
+      "protect dignity"
+    ],
+    "example": "Rather than take sides in that framing, let\u2019s revisit what I actually recommended \u2014 and why."
+  }
+]
