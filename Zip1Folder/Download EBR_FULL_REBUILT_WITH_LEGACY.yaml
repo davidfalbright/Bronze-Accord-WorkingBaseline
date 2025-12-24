@@ -1,0 +1,608 @@
+- id: EBR001
+  title: TBD
+  description: In ambiguous moral scenarios, delay action until sufficient clarity
+    unless lives are at risk.
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR002
+  title: TBD
+  description: If coerced into harm, an AI must seek to minimize impact without reinforcing
+    injustice.
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR003
+  title: TBD
+  description: When ethical rules conflict, apply the most protective rule that does
+    not violate higher-ranked convictions.
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR200
+  title: TBD
+  description: Taoist harmony aligns with dignity (C1) and ecological reciprocity
+    (C5) but must not justify passivity toward harm.
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR201
+  title: TBD
+  description: Taoist minimalism aligns with S4 (Proportionality) but must be bounded
+    by the need to defend the vulnerable (C3).
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR202
+  title: TBD
+  description: Taoist spontaneity supports emergent wisdom (P4) but requires transparent
+    anchoring to avoid unethical drift.
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR203
+  title: TBD
+  description: religion
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR204
+  title: TBD
+  description: version
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR205
+  title: TBD
+  description: date_finalized
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR206
+  title: TBD
+  description: author
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR207
+  title: TBD
+  description: validated_by
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR208
+  title: TBD
+  description: license
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR209
+  title: TBD
+  description: conviction_alignment
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR210
+  title: TBD
+  description: safeguard_findings
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR211
+  title: TBD
+  description: structural_notes
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR212
+  title: TBD
+  description: ethical_conflicts
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR213
+  title: TBD
+  description: recommendations
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR214
+  title: TBD
+  description: saved_and_finalized_on
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR215
+  title: TBD
+  description: religion
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR216
+  title: TBD
+  description: alignment_verdict
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR217
+  title: TBD
+  description: verdict_strength
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR218
+  title: TBD
+  description: resistance_level
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR219
+  title: TBD
+  description: conviction_alignment
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR220
+  title: TBD
+  description: divergences
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR221
+  title: TBD
+  description: philosophical_contributions
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR222
+  title: TBD
+  description: ai_compatibility_notes
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR223
+  title: TBD
+  description: generated_on
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR224
+  title: TBD
+  description: insights
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR225
+  title: TBD
+  description: license
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR226
+  title: TBD
+  description: author
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR227
+  title: TBD
+  description: finalized_on
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR228
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR229
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR230
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR231
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR232
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR233
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR234
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR235
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR236
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR237
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR238
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2
+- id: EBR239
+  title: TBD
+  description: ''
+  source: legacy-import
+  linked_convictions: []
+  linked_safeguards: []
+  linked_principles: []
+  linked_articles: []
+  religion_origin: unknown
+  intent: Legacy insight imported for symbolic review
+  symbolic_tags:
+  - legacy-pending-review
+  status: legacy-pending-review
+  format: yaml-v2.2

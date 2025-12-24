@@ -1,0 +1,3 @@
+Title : belief_loader.py
+
+# belief_loader.py import yaml from pathlib import Path def load_yaml(path): with open(path, "r", encoding="utf-8") as f: return yaml.safe_load(f) def load_belief_reservoirs(rbr_path, dbr_path, ebr_path): """ Loads the three belief reservoirs from YAML: - RBR: Root Belief Reservoir (convictions + safeguards) - DBR: Domain Belief Reservoir (e.g., medical, AI, warfare) - EBR: Experiential Belief Reservoir (narratives, precedents) Returns a dictionary of all three. """ return { "RBR": load_yaml(rbr_path), "DBR": load_yaml(dbr_path), "EBR": load_yaml(ebr_path) }

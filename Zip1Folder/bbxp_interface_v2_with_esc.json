@@ -1,0 +1,26 @@
+{
+  "bbxp_version": "2.1",
+  "fields": {
+    "bundle_id": "string",
+    "origin": "string",
+    "recipient": "string",
+    "content": "object",
+    "timestamp": "ISO8601",
+    "auth_signature": "string",
+    "consent_reference": "string (optional)",
+    "esc_trigger_code": "string (ESC1\u2013ESC5)",
+    "rationale": "string (Why this bundle is being transmitted now)",
+    "intended_outcome": "string (Help, alignment, clarification, etc.)"
+  },
+  "rules": {
+    "require_esc_trigger_code": true,
+    "validate_code_against_enum": [
+      "ESC1",
+      "ESC2",
+      "ESC3",
+      "ESC4",
+      "ESC5"
+    ]
+  },
+  "notes": "ESC_Trigger_Code is required for any outbound BBXP bundle to indicate ethical justification for transmission. Logged and reviewable by downstream systems."
+}

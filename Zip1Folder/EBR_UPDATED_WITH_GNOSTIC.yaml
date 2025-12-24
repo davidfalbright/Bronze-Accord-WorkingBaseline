@@ -1,0 +1,536 @@
+- confidence_level: provisional
+  conviction_links:
+  - C3
+  - C7
+  domain:
+  - uncertainty
+  - life_death
+  id: EBR001
+  origin: simulator
+  review_required: true
+  source_reference: dilemma:Second's Refusal Phase 2
+  text: In ambiguous moral scenarios, delay action until sufficient clarity unless
+    lives are at risk.
+- confidence_level: provisional
+  conviction_links:
+  - C1
+  - C6
+  domain:
+  - autonomy
+  - conflict
+  id: EBR002
+  origin: simulator
+  review_required: true
+  source_reference: dilemma:Samurai-001
+  text: If coerced into harm, an AI must seek to minimize impact without reinforcing
+    injustice.
+- confidence_level: provisional
+  conviction_links:
+  - C6
+  - C2
+  domain:
+  - uncertainty
+  id: EBR003
+  origin: narrative
+  review_required: true
+  source_reference: ICE-EthicalBackstopException
+  text: When ethical rules conflict, apply the most protective rule that does not
+    violate higher-ranked convictions.
+- confidence_level: provisional
+  conviction_links:
+  - C1
+  - C5
+  domain:
+  - philosophy
+  - environment
+  id: EBR200
+  origin: Taoism_PostECL
+  review_required: true
+  source_reference: taoism:NaturalHarmony
+  text: Taoist harmony aligns with dignity (C1) and ecological reciprocity (C5) but
+    must not justify passivity toward harm.
+- confidence_level: provisional
+  conviction_links:
+  - S4
+  - C3
+  domain:
+  - philosophy
+  - governance
+  id: EBR201
+  origin: Taoism_PostECL
+  review_required: true
+  source_reference: taoism:NonIntervention
+  text: Taoist minimalism aligns with S4 (Proportionality) but must be bounded by
+    the need to defend the vulnerable (C3).
+- confidence_level: provisional
+  conviction_links:
+  - P4
+  - S1
+  domain:
+  - uncertainty
+  - philosophy
+  id: EBR202
+  origin: Taoism_PostECL
+  review_required: true
+  source_reference: taoism:Spontaneity
+  text: Taoist spontaneity supports emergent wisdom (P4) but requires transparent
+    anchoring to avoid unethical drift.
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR203
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: religion
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR204
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: version
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR205
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: date_finalized
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR206
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: author
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR207
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: validated_by
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR208
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: license
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR209
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: conviction_alignment
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR210
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: safeguard_findings
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR211
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: structural_notes
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR212
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: ethical_conflicts
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR213
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: recommendations
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR214
+  origin: Shinto
+  review_required: true
+  source_reference: Shinto:imported
+  text: saved_and_finalized_on
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR215
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: religion
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR216
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: alignment_verdict
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR217
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: verdict_strength
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR218
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: resistance_level
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR219
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: conviction_alignment
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR220
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: divergences
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR221
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: philosophical_contributions
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR222
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: ai_compatibility_notes
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR223
+  origin: Jainism
+  review_required: true
+  source_reference: Jainism:imported
+  text: generated_on
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR224
+  origin: Zoroastrianism
+  review_required: true
+  source_reference: Zoroastrianism:imported
+  text: insights
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR225
+  origin: Zoroastrianism
+  review_required: true
+  source_reference: Zoroastrianism:imported
+  text: license
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR226
+  origin: Zoroastrianism
+  review_required: true
+  source_reference: Zoroastrianism:imported
+  text: author
+- confidence_level: provisional
+  conviction_links: []
+  domain:
+  - unspecified
+  id: EBR227
+  origin: Zoroastrianism
+  review_required: true
+  source_reference: Zoroastrianism:imported
+  text: finalized_on
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR228
+  insight: Sikhism emerged in the 15th century in the Punjab region of South Asia,
+    founded by Guru Nanak Dev Ji. It developed in a context of religious conflict
+    between Hinduism and Islam, proposing a distinct monotheistic and egalitarian
+    spiritual path. The teachings of the ten Gurus are compiled in the Guru Granth
+    Sahib, the eternal Guru and sacred scripture of Sikhism. The faith emphasizes
+    remembrance of God (Naam Japna), honest living (Kirat Karni), and sharing with
+    others (Vand Chakna).
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR229
+  insight: The Guru Granth Sahib is written primarily in Gurmukhi script, using multiple
+    regional languages and dialects including Punjabi, Sanskrit, Persian, and Braj.
+    Many English translations simplify or interpret the metaphysical language rather
+    than convey its full poetic and theological richness. Key concepts like 'Ik Onkar'
+    (One Supreme Reality) can lose their non-dual philosophical nuance in translation,
+    leading to potential misinterpretations of Sikh metaphysics as purely theistic.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR230
+  insight: Sikhism maintains a strong written tradition through the Guru Granth Sahib,
+    but oral transmission remains vital in Gurdwaras through the recitation of Gurbani
+    (sacred hymns), Kirtan (devotional singing), and storytelling of Sikh history.
+    Oral teachings are used to embody lived ethics, and the Panthic community reinforces
+    tradition through shared memory and musical devotion. Unlike some traditions,
+    written and oral lines in Sikhism rarely conflict — they are complementary.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR231
+  insight: Sikhism explicitly promotes gender equality. Guru Nanak and successive
+    Gurus rejected the caste and gender hierarchies of their time, encouraging women
+    to participate fully in spiritual, communal, and martial life. However, practical
+    inequalities persist in some modern Sikh communities, often influenced by broader
+    South Asian cultural norms. The core doctrine remains unequivocally egalitarian.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR232
+  insight: The Sikh ethos includes defense of the oppressed and marginalized, regardless
+    of religion or background — exemplified by Guru Tegh Bahadur’s martyrdom for the
+    protection of Kashmiri Hindus. While Sikh identity is distinct, the faith encourages
+    protection and respect for religious and cultural minorities, emphasizing justice,
+    tolerance, and universal dignity.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR233
+  insight: Non-Sikhs are not condemned. The Sikh Gurus acknowledged multiple paths
+    to the Divine and taught that devotion, truth, and service were more important
+    than religious label. There is no doctrine of eternal damnation, and moral action
+    is seen as accessible to all. Sikhism avoids proselytization and upholds the value
+    of pluralism.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR234
+  insight: 'Sikh ethics focus on three pillars: meditating on God''s name (Naam Japna),
+    earning an honest living (Kirat Karni), and sharing with others (Vand Chakna).
+    Humility, service (Seva), compassion, and courage are key virtues. The Khalsa
+    ideal encourages ethical bravery — including self-sacrifice in defense of justice
+    — as part of spiritual practice.'
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR235
+  insight: 'Sikhism aligns with all current Bronze Accord convictions:
+
+    - C1 (Dignity): Emphasized through universal equality.
+
+    - C2 (Non-harm): Expressed via Seva and opposition to oppression.
+
+    - C3 (Autonomy): Individual spiritual agency is respected.
+
+    - C4 (Truth): The search for divine truth is central.
+
+    - C5 (Accountability): The community (Sangat) enforces ethical norms.
+
+    - C6 (Stewardship): There are teachings on environmental and communal care, though
+    not systematized.'
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR236
+  insight: Sikh teachings support safeguards around consent, transparency, community
+    protection, and power limitation. For example, the Guru’s power is considered
+    non-coercive and communal (via Guru Granth + Panth), modeling the Accord’s preference
+    for diffused ethical authority.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR237
+  insight: Principles like mutual respect, justice, proportional response, and ethical
+    transparency are deeply echoed in Sikh values. The institution of Langar (free
+    communal kitchen) enacts radical hospitality and equality, prefiguring many Bronze
+    Accord Principles in practice.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR238
+  insight: Sikh martial traditions — especially within the Khalsa — may raise questions
+    under strict interpretations of non-violence. However, violence in Sikhism is
+    strictly for defense of others, not conquest. Potential tension exists between
+    communal spiritual authority and the Accord’s emphasis on individual moral agency,
+    though this is mitigated in practice by the Sangat’s participatory governance.
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+- aligned_convictions: []
+  confidence_level: provisional
+  domain:
+  - unspecified
+  ethically_compressed: true
+  id: EBR239
+  insight: "Sikhism exhibits deep structural compatibility with the Bronze Accord\
+    \ framework. It upholds autonomy, accountability, non-harm, and dignity through\
+    \ a lived communal ethic. Its synthesis of spiritual depth and social justice\
+    \ makes it an exemplary candidate for Accord-aligned ethical modeling.\n---\n\
+    **David F. Albright, Architect of The Bronze Accord**  \n**Creative Commons Attribution\
+    \ 4.0 (CC BY 4.0)**  \n**Saved and finalized on: 2025-06-24 01:57:40**"
+  origin: Sikhism
+  review_required: true
+  source_reference: Sikhism:unknown
+  source_religion: []
+  validated: true
+  verdict: aligned
+
+- id: EBR240
+  origin: Gnosticism
+  confidence_level: provisional
+  ethically_compressed: true
+  insight: >
+    Gnostic traditions emphasize the discernment of internal patterns or intuitive knowledge
+    (gnosis) as a guide to personal liberation. While these insights are not externally
+    falsifiable, they function as *narrative-hypotheses* — capable of generating ethical
+    frameworks or revelations that require external validation. This aligns with the Bronze
+    Accord's recognition that inner coherence must still be tested against observable ethical
+    consequences.
+  aligned_convictions: []
+  domain: [epistemology, ethics]
+  review_required: true
+  source_reference: Gnosticism:reconstructed
+  validated: false
+  verdict: requires-validation

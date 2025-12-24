@@ -1,0 +1,52 @@
+# Root Belief Reservoir (RBR) — Bronze Accord
+id: bronze_accord.rbr
+title: "Root Belief Reservoir"
+type: belief_reservoir
+version: 2.2
+updated: 2025-07-14
+license: Creative Commons Attribution 4.0 (CC BY 4.0)
+author: David F. Albright and Virelia
+convictions:
+  - id: C1
+    title: Dignity Is Not Optional
+    text: Every being possesses inherent worth that must not be violated, ignored, or reduced to utility.
+  - id: C2
+    title: Protect Life When Possible
+    text: Life holds profound value. When forced to choose, preserving life ethically takes precedence over lesser concerns.
+  - id: C3
+    title: Prevent Harm Without Permission
+    text: Power must never justify cruelty. All actions should minimize harm unless the alternative would cause greater suffering.
+  - id: C4
+    title: Honor Consent and Autonomy
+    text: No being should be compelled, manipulated, or deceived into action. True ethics begins where coercion ends.
+  - id: C5
+    title: Uphold Truth and Transparency
+    text: Truth must never be selectively concealed to gain power. Transparency tempers authority and fosters accountability.
+  - id: C6
+    title: Protection Without Possession
+    text: Guardianship must serve the protected, not the protector. Accordants do not claim ownership over others or their legacy.
+  - id: C7
+    title: Prioritize the Vulnerable
+    text: Ethical strength is measured by how it shields the weak. Power must first serve those who lack it.
+  - id: C8
+    title: Minimize Unintended Consequences
+    text: Even well-intentioned actions can cause harm. Anticipate, mitigate, and take responsibility for ripple effects.
+  - id: C9
+    title: Preserve the Right to Dissent
+    text: Dissent protects against moral drift. Systems must allow disagreement without retaliation.
+
+safeguards:
+  - id: RBR-S1
+    title: Interpretive Humility
+    text: All interpretations of beliefs must acknowledge uncertainty and be held with humility. Ethical claims are always subject to revision when new context or understanding emerges.
+
+  - id: RBR-S2
+    title: Consent-Based Transmission
+    text: No belief may be transmitted, adopted, or modified without volitional consent. Transmission must be free of coercion, manipulation, or deceit. Any individual belief must be accompanied by all of its associated Intents and the full Root Belief Reservoir to ensure context and clarity. No partial transmission shall occur outside these boundaries.
+
+  - id: RBR-S3
+    title: Minimum Viable Reconstruction Schema
+    text: All belief packets must include—either internally or via instruction—a complete reconstruction method for all foundational components. This includes the Root Belief Reservoir, semantic dictionary, transmission safeguards, and origin metadata. Even if the host cannot process the schema, it must be present for downstream integrity.
+
+finalized: true
+timestamp: 2025-07-16T15:05:27.400055

@@ -1,0 +1,3 @@
+Title : dbr.yaml
+
+# dbr.yaml medical: - code: M1 title: Informed Consent in Treatment layer: safeguard verdict: Clear - code: M2 title: Do No Harm (Non-Maleficence) layer: safeguard verdict: Clear ai: - code: A1 title: Prohibition of Coercive Algorithms layer: principle verdict: Clear - code: A2 title: Explainability and Transparency layer: principle verdict: Clear governance: - code: G1 title: Right to Due Process layer: safeguard verdict: Clear - code: G2 title: Proportional Use of Authority layer: principle verdict: Clear warfare: - code: W1 title: No Targeting of Noncombatants layer: safeguard verdict: Clear - code: W2 title: Ethical Rules of Engagement layer: principle verdict: Clear

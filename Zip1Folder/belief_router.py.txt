@@ -1,0 +1,3 @@
+Title : belief_router.py
+
+# belief_router.py def route_belief(dilemma_tags, rbr, dbr, ebr): """ Routes the dilemma to the correct belief reservoirs based on tags. Priority: RBR (always), then DBR (by domain), then EBR (by narrative context) Returns a merged list of relevant beliefs. """ applicable_beliefs = [] # Always apply Root Beliefs (Convictions) applicable_beliefs.extend(rbr.get("convictions", [])) # Match DBR beliefs by domain tag for domain_tag, belief_set in dbr.items(): if domain_tag.lower() in dilemma_tags: applicable_beliefs.extend(belief_set) # Match EBR narratives by experiential tag for narrative_tag, belief_set in ebr.items(): if narrative_tag.lower() in dilemma_tags: applicable_beliefs.extend(belief_set) return applicable_beliefs
