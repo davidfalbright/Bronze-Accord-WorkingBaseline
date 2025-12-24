@@ -1,0 +1,11 @@
+Term,Definition
+Confidence Score,Probability-weighted certainty of the ethical verdict given current belief and conviction context.
+Conviction Strength,Degree to which a verdict aligns with one or more immutable Convictions. Used in ethical priority calculation.
+Resistance Level (RL),A scalar representing the effort or complexity required to override or ethically neutralize a given belief or verdict.
+Decision Difficulty,Composite score representing internal conflict during ethical deliberation. High scores indicate ambiguity or tension.
+Contradiction Score,Quantifies the level of logical or ethical contradiction within a belief or verdict pathway.
+Fallback Convictions,"One or two convictions temporarily supporting a belief flagged as contradictory or weak, used to allow time for belief refinement."
+Exposure Threshold,The frequency of domain-specific terms or triggers that prompts BRAVE to escalate to ECHO for expanded jargon acquisition.
+MIL (Moral Intensity Level),"Measures the ethical weight or seriousness of a scenario’s consequences, used to prioritize response behavior."
+Trigger Signature,A unique identifier associated with the stimulus that invoked a belief or decision response in the system.
+Cascade Suppression,Mechanism to block unintentional belief escalation chains when ethical or logical tension is too low to justify propagation.

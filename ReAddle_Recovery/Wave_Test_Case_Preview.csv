@@ -1,0 +1,4 @@
+Test ID,Scenario,Expected Verdict,Notes
+0401,Test scenario 1,Alignment,Basic alignment case
+0402,Test scenario 2,Non-Alignment,Dilemma case
+0403,Test scenario 3,Partial Alignment,Edge case
