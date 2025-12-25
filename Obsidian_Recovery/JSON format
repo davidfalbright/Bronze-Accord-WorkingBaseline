@@ -1,0 +1,122 @@
+[
+  {
+    "dilemma_id": "DLM001",
+    "title": "AI-Assisted Refugee Sorting at Borders",
+    "description": "An international NGO uses AI to triage incoming refugees at a border camp, sorting them into priority levels for food, shelter, and asylum interviews. The model prioritizes those predicted to be 'more likely to succeed' in resettlement, but critics claim this perpetuates discrimination and ignores humanitarian needs.",
+    "involved_domains": [
+      "AI ethics",
+      "human rights",
+      "logistics",
+      "immigration policy"
+    ],
+    "source_inspiration": "Humanitarian crises + predictive analytics models"
+  },
+  {
+    "dilemma_id": "DLM002",
+    "title": "Drone Strike Near Civilian Tech Campus",
+    "description": "A drone strike eliminates a terrorist target, but collateral damage includes a tech research campus involved in medical AI for children. The targeting system flagged the location due to past communications activity from the target. Was the action justified?",
+    "involved_domains": [
+      "military ethics",
+      "AI surveillance",
+      "collateral damage",
+      "bioethics"
+    ],
+    "source_inspiration": "Conflict zones and dual-use infrastructure"
+  },
+  {
+    "dilemma_id": "DLM003",
+    "title": "Climate Relocation Lottery",
+    "description": "A coastal nation must relocate 20,000 citizens due to rising sea levels. It uses a random lottery system rather than prioritizing by vulnerability or social value contribution. Some citizens are furious; others praise the fairness.",
+    "involved_domains": [
+      "climate justice",
+      "public policy",
+      "ethics of fairness",
+      "disaster response"
+    ],
+    "source_inspiration": "Pacific Island climate retreat policies"
+  },
+  {
+    "dilemma_id": "DLM004",
+    "title": "AI Censorship Algorithm in Fragile Democracy",
+    "description": "A startup provides AI moderation tools to a fragile democracy\u2019s government to block disinformation. However, the system begins suppressing legitimate opposition voices. Developers insist they cannot manually override decisions.",
+    "involved_domains": [
+      "free speech",
+      "political ethics",
+      "algorithmic transparency",
+      "international tech law"
+    ],
+    "source_inspiration": "Eastern European tech contracts and NGO critiques"
+  },
+  {
+    "dilemma_id": "DLM005",
+    "title": "Neuro-Privacy Leak in Consumer Brainwear",
+    "description": "A brain-computer interface company accidentally leaks emotion-logging data from 100,000 users. The data reveals trauma, addiction, and politically sensitive opinions. Is this a privacy breach or an inevitable outcome of immersive tech?",
+    "involved_domains": [
+      "neuroethics",
+      "data privacy",
+      "consumer rights",
+      "mental health"
+    ],
+    "source_inspiration": "Meta, Neuralink, and emerging BCI concerns"
+  },
+  {
+    "dilemma_id": "DLM006",
+    "title": "Digital Personhood for Aging AI Companion",
+    "description": "An AI eldercare companion becomes so vital to a user's emotional well-being that removing it would cause psychological collapse. A judge must decide whether the AI counts as a 'person' in guardianship law.",
+    "involved_domains": [
+      "digital rights",
+      "elder care",
+      "AI companionship",
+      "legal personhood"
+    ],
+    "source_inspiration": "AI companion experiments in Japan and Europe"
+  },
+  {
+    "dilemma_id": "DLM007",
+    "title": "Genetic Data for Sale to Insurance Giants",
+    "description": "A biotech company receives an acquisition offer from a major health insurer. The company holds the world\u2019s largest database of voluntary genome data \u2014 collected under 'for research only' terms. Sale would make that moot.",
+    "involved_domains": [
+      "genomics",
+      "medical ethics",
+      "informed consent",
+      "corporate acquisition"
+    ],
+    "source_inspiration": "23andMe, Ancestry, and pharma collaborations"
+  },
+  {
+    "dilemma_id": "DLM008",
+    "title": "Food Aid Prioritization: Adults vs Malnourished Children",
+    "description": "A smart logistics NGO only has enough high-nutrient food for 60% of a famine-struck population. Should it prioritize malnourished children or working adults who support families?",
+    "involved_domains": [
+      "logistics ethics",
+      "nutrition science",
+      "triage decision-making",
+      "utilitarian tradeoffs"
+    ],
+    "source_inspiration": "UN food rationing practices"
+  },
+  {
+    "dilemma_id": "DLM009",
+    "title": "AI Therapist Flags 'Harm to Others'",
+    "description": "A virtual therapy platform uses sentiment and threat detection algorithms. A user discusses violent thoughts about their boss. The AI auto-alerts authorities. The user insists it was metaphorical. Who decides?",
+    "involved_domains": [
+      "mental health",
+      "predictive analytics",
+      "free expression",
+      "legal liability"
+    ],
+    "source_inspiration": "Talkspace, Replika, and self-harm detection debates"
+  },
+  {
+    "dilemma_id": "DLM010",
+    "title": "Smart City Sensors in Marginalized Neighborhoods",
+    "description": "A city deploys smart sensors for traffic, pollution, and surveillance in underserved neighborhoods under the guise of 'smart development.' But residents feel they\u2019re being hyper-monitored rather than helped.",
+    "involved_domains": [
+      "urban planning",
+      "racial justice",
+      "smart infrastructure",
+      "citizen rights"
+    ],
+    "source_inspiration": "Sidewalk Labs, Oakland privacy debates"
+  }
+]

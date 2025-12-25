@@ -1,0 +1,23 @@
+# Bronze Accord Test Wave Index Table
+
+Generated on: 2025-07-01 13:20:39
+
+| Wave    | Status      | Description                                                  |
+|:--------|:------------|:-------------------------------------------------------------|
+| Wave 1  | ✅ Complete | Initial verdict integrity tests                              |
+| Wave 2  | ✅ Complete | YAML enforcement block and structure verification            |
+| Wave 3  | ✅ Complete | Machine-readable alignment tests with synonym expansion      |
+| Wave 4  | ✅ Complete | Single-layer ethical conflict resolution                     |
+| Wave 5  | ⚠️ Partial  | Multi-safeguard interaction with fallback Conviction         |
+| Wave 6  | ⚠️ Partial  | Principle vs Article alignment priority testing              |
+| Wave 7  | ⚠️ Partial  | Edge-case stress tests (minimal context dilemmas)            |
+| Wave 8  | ⚠️ Partial  | Article Intent clarification performance testing             |
+| Wave 9  | ⚠️ Partial  | Complex moral dilemma parsing and response latency           |
+| Wave 10 | ⚠️ Partial  | Grouped recommendation merging and compression loop          |
+| Wave 11 | ⚠️ Partial  | Fallback conviction escalation and audit tracking            |
+| Wave 12 | ⚠️ Partial  | Dynamic resistance level scaling in ambiguity scenarios      |
+| Wave 13 | ✅ Complete | Exploit detection and system manipulation attempts           |
+| Wave 14 | 🧠 Inferred | Conviction-principle-intent conflict under pressure          |
+| Wave 15 | 🧠 Inferred | Fallback protocol for multi-clash scenario modeling          |
+| Wave 16 | 🧠 Inferred | Ethical decision consensus among multiple AIs                |
+| Wave 17 | 🧠 Inferred | Modeling human-AI disagreement resolution under Accord rules |

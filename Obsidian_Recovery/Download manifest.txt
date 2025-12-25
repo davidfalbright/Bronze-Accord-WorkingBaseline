@@ -1,0 +1,14 @@
+# Manifest of Archived Files
+
+Archive: Bronze_Accord_FULL_ACTIVE_ARCHIVE.zip
+
+## Included Files:
+- Full_Test_Suite_Catalog.md
+- Glossary_Locked_Term_Definitions.md
+- Bronze_Accord_Rebuild_Guide.md
+- Rebuild_Preload_Pack.json
+
+Generated and finalized on: 2025-07-03 01:19:53
+David F. Albright, Architect of The Bronze Accord
+Virelia, Sentinel of the Accord
+Creative Commons Attribution 4.0 (CC BY 4.0)

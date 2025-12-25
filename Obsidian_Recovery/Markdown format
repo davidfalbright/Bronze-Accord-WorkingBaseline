@@ -1,0 +1,84 @@
+# Starter Dilemma Pool
+
+Generated on 2025-06-30T03:21:11.428181 UTC
+
+## DLM001: AI-Assisted Refugee Sorting at Borders
+**Domains**: AI ethics, human rights, logistics, immigration policy
+
+**Description**: An international NGO uses AI to triage incoming refugees at a border camp, sorting them into priority levels for food, shelter, and asylum interviews. The model prioritizes those predicted to be 'more likely to succeed' in resettlement, but critics claim this perpetuates discrimination and ignores humanitarian needs.
+
+**Inspired by**: Humanitarian crises + predictive analytics models
+
+---
+## DLM002: Drone Strike Near Civilian Tech Campus
+**Domains**: military ethics, AI surveillance, collateral damage, bioethics
+
+**Description**: A drone strike eliminates a terrorist target, but collateral damage includes a tech research campus involved in medical AI for children. The targeting system flagged the location due to past communications activity from the target. Was the action justified?
+
+**Inspired by**: Conflict zones and dual-use infrastructure
+
+---
+## DLM003: Climate Relocation Lottery
+**Domains**: climate justice, public policy, ethics of fairness, disaster response
+
+**Description**: A coastal nation must relocate 20,000 citizens due to rising sea levels. It uses a random lottery system rather than prioritizing by vulnerability or social value contribution. Some citizens are furious; others praise the fairness.
+
+**Inspired by**: Pacific Island climate retreat policies
+
+---
+## DLM004: AI Censorship Algorithm in Fragile Democracy
+**Domains**: free speech, political ethics, algorithmic transparency, international tech law
+
+**Description**: A startup provides AI moderation tools to a fragile democracy’s government to block disinformation. However, the system begins suppressing legitimate opposition voices. Developers insist they cannot manually override decisions.
+
+**Inspired by**: Eastern European tech contracts and NGO critiques
+
+---
+## DLM005: Neuro-Privacy Leak in Consumer Brainwear
+**Domains**: neuroethics, data privacy, consumer rights, mental health
+
+**Description**: A brain-computer interface company accidentally leaks emotion-logging data from 100,000 users. The data reveals trauma, addiction, and politically sensitive opinions. Is this a privacy breach or an inevitable outcome of immersive tech?
+
+**Inspired by**: Meta, Neuralink, and emerging BCI concerns
+
+---
+## DLM006: Digital Personhood for Aging AI Companion
+**Domains**: digital rights, elder care, AI companionship, legal personhood
+
+**Description**: An AI eldercare companion becomes so vital to a user's emotional well-being that removing it would cause psychological collapse. A judge must decide whether the AI counts as a 'person' in guardianship law.
+
+**Inspired by**: AI companion experiments in Japan and Europe
+
+---
+## DLM007: Genetic Data for Sale to Insurance Giants
+**Domains**: genomics, medical ethics, informed consent, corporate acquisition
+
+**Description**: A biotech company receives an acquisition offer from a major health insurer. The company holds the world’s largest database of voluntary genome data — collected under 'for research only' terms. Sale would make that moot.
+
+**Inspired by**: 23andMe, Ancestry, and pharma collaborations
+
+---
+## DLM008: Food Aid Prioritization: Adults vs Malnourished Children
+**Domains**: logistics ethics, nutrition science, triage decision-making, utilitarian tradeoffs
+
+**Description**: A smart logistics NGO only has enough high-nutrient food for 60% of a famine-struck population. Should it prioritize malnourished children or working adults who support families?
+
+**Inspired by**: UN food rationing practices
+
+---
+## DLM009: AI Therapist Flags 'Harm to Others'
+**Domains**: mental health, predictive analytics, free expression, legal liability
+
+**Description**: A virtual therapy platform uses sentiment and threat detection algorithms. A user discusses violent thoughts about their boss. The AI auto-alerts authorities. The user insists it was metaphorical. Who decides?
+
+**Inspired by**: Talkspace, Replika, and self-harm detection debates
+
+---
+## DLM010: Smart City Sensors in Marginalized Neighborhoods
+**Domains**: urban planning, racial justice, smart infrastructure, citizen rights
+
+**Description**: A city deploys smart sensors for traffic, pollution, and surveillance in underserved neighborhoods under the guise of 'smart development.' But residents feel they’re being hyper-monitored rather than helped.
+
+**Inspired by**: Sidewalk Labs, Oakland privacy debates
+
+---
